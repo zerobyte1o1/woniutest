@@ -1,0 +1,5 @@
+销售出库,正确的会员电话
+test_api_login.txt
+post,/customer/query,customerphone=15983123450
+status should be,code,200
+should be equal,jsonpath$.[0].customerphone,15983123450

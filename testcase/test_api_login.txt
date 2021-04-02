@@ -1,0 +1,4 @@
+登录,正确用户名密码
+post,/user/login,username=admin&password=Milor123&verifycode=0000
+status should be,code,200
+should be equal,text,login-pass

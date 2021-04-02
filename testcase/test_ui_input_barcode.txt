@@ -1,0 +1,6 @@
+销售出库,正确条形码
+test_ui_login.txt
+input text by template,barcode.png,11111111
+click element,css=form.form-inline>button
+wait until element is visible,css=#goodslist>tr:first-child>td:first-child
+element text should be,css=#goodslist>tr:first-child>td:first-child,11111111

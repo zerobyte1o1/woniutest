@@ -1,0 +1,9 @@
+登录,正确用户名密码
+set implicitly wait,5
+open browser,/
+input text,id=username,admin
+input password,id=password,Milor123
+input text,id=verifycode,0000
+click element,css selector=button.form-control.btn-primary
+wait until element contains,css selector=div#navbar>ul:nth-child(2)>li>a,admin,15
+element should contain,css selector=div#navbar>ul:nth-child(2)>li>a,admin
